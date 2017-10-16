@@ -39,7 +39,7 @@ dt.mrg <- rbind(train, test)
 ####Question 2 Extracts only the measurements on the mean and standard deviation for each measurement.
 
 mean_std<- grep('mean|std', features)
-dt_mean_std <- data.all[,c(1,2,mean_std + 2)]
+dt_mean_std <- dt.mrg[,c(1,2,mean_std + 2)]
 
 #dt_mean_std
 
